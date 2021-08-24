@@ -1,11 +1,11 @@
+import { AppRouter } from "./routers/AppRouter";
 import './App.css';
 
-function App() {
+export const App = () => {
+
   return (
-    <div className="App">
-      <h1>I'm alive</h1>
-    </div>
+    <AppRouter />
   );
+
 }
 
-export default App;
