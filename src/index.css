@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 1rem;
+  text-align: center;
   font-family: "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
