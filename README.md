@@ -19,10 +19,10 @@ https://github.com/HellfireDev/TorreTestBackend
 - public/assets: Holds images used in the app.
 - Inside src/
 - auth: Register and login context and reducer.
-- config: Currently only holds API endpoints urls.
+- config: API endpoint urls and visual particles configuration options.
 - helpers: Abstracted logic mainly for API calls and cleaning up main components.
 - hooks: Custom hooks.
-- Pages: Components organized by each app page.
+- Pages: Components organized per each app page.
 - Routers: Public and Protected routes.
 - Types: Common used types to reduce typos.
 - index.js/App.js: Top level App components.
