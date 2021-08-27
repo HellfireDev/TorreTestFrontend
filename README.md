@@ -1,6 +1,6 @@
 # Fullstack Test: Frontend
 
-Hero's Journey App (made with React.js {create-react-app} using Hooks) is a responsive web app inspired by the age old Hero's Journey pattern (getting started and overcoming challenges cycle), uses the power of torre API to authenticate a torre user, present 3 random strenghts, interests and experiences of that person; and then suggests 3 potential jobs and 3 potential mentors based on user selected combinations. The goal is to challenge the user to explore new and varied opportunities for growth, just like a hero.
+Hero's Journey App (made with React.js {create-react-app} using Hooks) is a responsive web app inspired by the age old Hero's Journey pattern (getting started and overcoming challenges cycle), which uses the power of torre API to authenticate a torre user, present 3 random strenghts, interests and experiences of that person; and then suggests 3 potential jobs and 3 potential mentors based on user selected combinations. The goal is to challenge the user to explore new and varied opportunities for growth, just like a hero.
 
 ## Features
 - Basic authentication flow.
