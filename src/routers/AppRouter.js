@@ -15,32 +15,34 @@ export const AppRouter = () => {
     const { user } = useContext(AuthContext);
 
     return (
-        <Router>
-            <>
-                <Particles className='particles' params={particlesOptions} />
-                <Switch>
-                    <PublicRoute
-                        exact path='/register'
-                        component={Register}
-                        isAuthenticated={user.logged}
-                    />
-                    <PublicRoute
-                        exact path='/signin'
-                        component={Signin}
-                        isAuthenticated={user.logged}
-                    />
-                    <PrivateRoute
-                        exact path='/home'
-                        component={Home}
-                        isAuthenticated={user.logged}
-                    />
-                    {/* <Route exact path='/job/:jobId' component={JobDetails} />
+        <>
+            <Particles className='particles' params={particlesOptions} />
+            <Router>
+                <>
+                    <Switch>
+                        <PublicRoute
+                            exact path='/register'
+                            component={Register}
+                            isAuthenticated={user.logged}
+                        />
+                        <PublicRoute
+                            exact path='/signin'
+                            component={Signin}
+                            isAuthenticated={user.logged}
+                        />
+                        <PrivateRoute
+                            exact path='/home'
+                            component={Home}
+                            isAuthenticated={user.logged}
+                        />
+                        {/* <Route exact path='/job/:jobId' component={JobDetails} />
                     <Route exact path='/user/:userId' component={UserDetails} /> */}
 
-                    <Redirect to='/signin' />
-                </Switch>
-            </>
-        </Router>
+                        <Redirect to='/signin' />
+                    </Switch>
+                </>
+            </Router>
+        </>
     );
 
 }

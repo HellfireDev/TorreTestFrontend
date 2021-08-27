@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 
-export const useFetchPost = (payload = null, url) => {
+export const useFetchAuth = (payload = null, url) => {
 
     const [state, setState] = useState({
         data: null,

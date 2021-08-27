@@ -6,3 +6,7 @@
     left: 0;
     z-index: -1;
   }
+
+  .app-logo{
+    filter: invert(100%);
+}

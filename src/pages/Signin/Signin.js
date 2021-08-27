@@ -3,7 +3,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../auth/AuthContext";
 import { apiEndpoints } from "../../config/apiEndpoints";
-import { useFetchPost } from "../../hooks/useFetchPost";
+import { useFetchAuth } from "../../hooks/useFetchAuth";
 import { useForm } from "../../hooks/useForm";
 import { types } from "../../types/types";
 
@@ -13,7 +13,7 @@ export const Signin = ({ history }) => {
     const { dispatch } = useContext(AuthContext);
     const [submittedValues, setSubmittedValues] = useState(null);
     const [formValues, handleInputChange] = useForm();
-    const { data: user, loading, error } = useFetchPost(submittedValues, apiEndpoints.login);
+    const { data: user, loading, error } = useFetchAuth(submittedValues, apiEndpoints.login);
 
     const handleFormSubmit = () => {
         const { torreid, password } = formValues;
@@ -52,7 +52,7 @@ export const Signin = ({ history }) => {
 
     return (
         <div className='h1 items-center'>
-            <img src='./assets/Logo.png' alt='logo' className="logo pt3" style={{ width: '10rem' }} />
+            <img src='./assets/Logo.png' alt='logo' className="logo pt3 app-logo" style={{ width: '10rem' }} />
             <article className="br3 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
                 <main className="pa3 black-80">
                     <div className="measure">

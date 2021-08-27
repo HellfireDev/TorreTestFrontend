@@ -2,5 +2,8 @@
 
 export const types = {
     login: 'login',
-    logout: 'logout'
+    logout: 'logout',
+    strengths: 'strengths',
+    interests: 'interests',
+    experiences: 'experiences'
 }
