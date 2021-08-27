@@ -23,7 +23,7 @@ https://github.com/HellfireDev/TorreTestBackend
 - helpers: Abstracted logic mainly for API calls and cleaning up main components.
 - hooks: Custom hooks.
 - Pages: Components organized by each app page.
-- Routers: Routing-dom component.
+- Routers: Public and Protected routes.
 - Types: Common used types to reduce typos.
 - index.js/App.js: Top level App components.
 
